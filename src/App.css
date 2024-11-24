@@ -1,5 +1,5 @@
 .menu a{
-    @apply rounded-md  px-3 py-2  text-sm font-medium hover:text-white hover:bg-slate-900;
+    @apply rounded-md hidden md:inline-block px-3 py-2  text-sm font-medium hover:text-white hover:bg-slate-900;
 }
 .menu .dark{
     @apply text-white ;
