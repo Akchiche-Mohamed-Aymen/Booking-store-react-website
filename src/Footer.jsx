@@ -5,7 +5,7 @@ import {useTheme} from './contexts/ThemeProvider'
 const Footer = () => {
   const {dark} = useTheme()
   return (
-    <div className={`flex flex-col md:flex-row justify-around flex-wrap  ${dark ?'bg-slate-900' : 'bg-white'}  py-4`}>
+    <div className={`flex flex-col md:flex-row justify-around flex-wrap px-4  ${dark ?'bg-slate-900' : 'bg-white'}  py-4`}>
       <div>
         <h1 className="text-3xl text-red-600 mb-3">ESHOP</h1>
         <p className="text-gray-400">Lorem ipsum dolor, sit amet cons <br/>
