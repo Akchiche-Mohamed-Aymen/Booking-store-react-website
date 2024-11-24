@@ -1,0 +1,44 @@
+.menu a{
+    @apply rounded-md  px-3 py-2  text-sm font-medium hover:text-white hover:bg-slate-900;
+}
+.menu .dark{
+    @apply text-white ;
+}
+body{
+  @apply overflow-x-hidden;
+}
+.search:hover input{
+  @apply  w-40 ;
+  transition: 3s;
+}
+.market span{
+    bottom: 15px;
+    right: -3px;
+    border-radius: 50%;
+}
+.carousel{
+  height: 90vh;
+}
+.ear{
+  height: 470px;
+}
+.watch{
+  height: 300px;
+}
+.hour{
+  min-height: 500px;
+}
+@media (max-width:650px){
+  .fine{
+    height: fit-content;
+    padding: 10px 5px;
+  }
+  .fine img{
+    height: 370px;
+  }
+  .blog{
+    @apply mx-auto;
+    width: 93vw
+    
+  }
+}
