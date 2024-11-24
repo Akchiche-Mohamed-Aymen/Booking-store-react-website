@@ -22,12 +22,12 @@ export default function NavBar() {
           </div>
          
             <div className="relative ml-3  flex items-center gap-5">
-              <div className="cursor-pointer  search flex items-center rounded-md hover:border border-red-600 p-1" >
-                <input type="text" className=" w-0 border-none outline-none" name="" id="" />
-                <i className="fa-solid fa-magnifying-glass"></i>
+              <div className={`cursor-pointer  search flex items-center rounded-md hover:border ${!dark ? 'border-red-600' : ''} p-1`} >
+                <input type="text" className=" w-0 border-none outline-none rounded-md" name="" id="" />
+                <i className={`fa-solid fa-magnifying-glass ${dark ? 'text-white' : 'text-black'}`}></i>
               </div>
               <div className="relative bg-red market cursor-pointer">
-                  <i className="fa-solid fa-cart-shopping  text-lg"></i>
+                  <i className={`fa-solid fa-cart-shopping  text-lg ${dark ? 'text-white' : 'text-black'}`}></i>
                   <span className=" absolute  bg-red-600 text-white h-4 w-4 flex justify-center items-center">0</span>
               </div>
               <img src={dark ? darkLogo : lightLogo} onClick={()=>setDark(!dark)} className='cursor-pointer w-12 h-6' alt="" />
